@@ -1,0 +1,17 @@
+{
+  "name": "rct-plugin-template",
+  "version": "1.0.0",
+  "description": "rct-plugin-cli 模板",
+  "main": "lib/plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "NeroXie",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.5.4",
+    "rct-plugin-decorators": "github:YiHuaXie/rct-plugin-decorators",
+    "typescript": "^5.5.4"
+  }
+}
