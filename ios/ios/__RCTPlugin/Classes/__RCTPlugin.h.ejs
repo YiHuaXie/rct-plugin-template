@@ -1,0 +1,13 @@
+//
+//  <%- spec.name %>.h
+//  Created by <%- common.writer %> on <%- common.year %>/<%- common.month %>/<%- common.day %>.
+//
+
+<%- code.hFileImportCode(spec.meta.type, (spec.module || spec.uiComponent).events.length > 0) %>
+
+<%- (spec.module || spec.uiComponent).comment%>
+@interface <%- spec.name %> : <%- code.hFileSuperClassCode(spec.meta.type, (spec.module || spec.uiComponent).events.length > 0) %>
+
+<%- code.hFileEventCode((spec.module || spec.uiComponent).events) %>
+
+@end

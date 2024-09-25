@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'RCTPlugin_Example' do
+  pod '__RCTPlugin', :path => '../../'
+
+  target 'RCTPlugin_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

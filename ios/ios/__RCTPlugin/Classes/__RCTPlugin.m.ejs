@@ -1,0 +1,14 @@
+//
+//  <%- spec.name %>.m
+//  Created by <%- common.writer %> on <%- common.year %>/<%- common.month %>/<%- common.day %>.
+//
+
+<%- code.mFileImportCode(spec.name) %>
+
+@implementation <%- spec.name %>
+
+<%- code.mFileMethodCode((spec.module || spec.uiComponent).methods) %>
+
+<%- code.mFileEventCode((spec.module || spec.uiComponent).events) %>
+
+@end
